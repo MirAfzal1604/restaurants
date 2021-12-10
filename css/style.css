@@ -124,6 +124,22 @@ a {
     opacity: 1;
 }
 
+#about,
+#why,
+#menu,
+#check,
+#events,
+#Booking,
+#workers,
+#gallary,
+#chefs,
+#contact,
+#footer {
+    position: relative;
+    overflow: hidden;
+}
+
+
 #myBtn {
     display: none;
     position: fixed;
