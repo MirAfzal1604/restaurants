@@ -924,7 +924,7 @@ section {
     box-shadow: none;
     font-size: 14px;
     background: #0c0b09;
-    border-color: #625b4b;
+    border: 2px solid #625b4b;
     color: white;
     padding: .375rem .75rem;
 }
