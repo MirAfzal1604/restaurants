@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e01e13ae9c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="icon" href="./img/specials-1.png" type="image/x-icon">
+    <title>Restuarants</title>
+</head>
+
+<body onload="loading()">
+
+    <div class="loader">
+        <div class="thing">
+            <div class="anima"></div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <div id="nav" class="">
+        <div class="container">
+            <div class="navbar">
+                <h1 class="logo">
+                    <a href="./index.html">
+                        Restaurantly
+                    </a>
+                </h1>
+                <div class="burgeradd">
+                    <ul class="nav_links">
+                        <li class="li">
+                            <a href="#home" class="home active" onclick="closeBurger()">Home</a>
+                        </li>
+                        <li class="li">
+                            <a href="#about" class="about" onclick="closeBurger()">About</a>
+                        </li>
+                        <li class="li">
+                            <a href="#menu" class="menu" onclick="closeBurger()">Menu</a>
+                        </li>
+                        <li class="li">
+                            <a href="#check" class="check" onclick="closeBurger()">Specials</a>
+                        </li>
+                        <li class="li">
+                            <a href="#events" class="events" onclick="closeBurger()">Events</a>
+                        </li>
+                        <li class="li">
+                            <a href="#gallary" class="gallary" onclick="closeBurger()">Gallery</a>
+                        </li>
+                        <li class="li">
+                            <a href="#chefs" class="chefs" onclick="closeBurger()">Chefs</a>
+                        </li>
+                        <li id="hoverDrop" class="li">
+                            <a href="#">DropDown</a><span><i class="fas fa-chevron-down" id="arrow_drop"></i></span>
+                            <ul class="dropdown">
+                                <li class="dropdown_li">
+                                    <a href="#" class="dropdown_a" onclick="closeBurger()">DropDown1</a>
+                                </li>
+                                <li class="dropdown_li">
+                                    <a href="#" class="dropdown_a" onclick="closeBurger()">DropDown2</a>
+                                </li>
+                                <li class="dropdown_li">
+                                    <a href="#" class="dropdown_a" onclick="closeBurger()">DropDown3</a>
+                                </li>
+                                <li class="dropdown_li">
+                                    <a href="#" class="dropdown_a" onclick="closeBurger()">DropDown4</a>
+                                </li>
+                                <li class="dropdown_li">
+                                    <a href="#" class="dropdown_a" onclick="closeBurger()">DropDown5</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="li">
+                            <a href="#contact" class="contact" onclick="closeBurger()">Contacts</a>
+                        </li>
+                        <i class="fas fa-times close_icon" onclick="closeBurger()"></i>
+                    </ul>
+                </div>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="head d-flex align-items-center">
+        <div class="container  position-relative">
+            <div class="anima_head">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <h1 class="head_h_b">Welcome to <span>Restaurantly</span></h1>
+                        <h2 class="head_h_s">Delivering great food for more than 18 years!</h2>
+
+                        <div class="btns">
+                            <a href="#" class="btn-menu">Our Menu</a>
+                            <a href="#Booking" class="btn-book">Book a Table</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center position-relative">
+                        <a href="#" class="play-btn" onclick="toggleVideo()"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video">
+        <i class="fas fa-times video_close" onclick="toggleVideo()"></i>
+        <video src="./img/video_2021-12-10_18-56-08.mp4" class="video_file" controls="true"></video>
+    </div>
+
+
+    <section id="about">
+        <div class="container position-relative">
+            <div class="about_content row reveal">
+                <div class="col-12 col-lg-6">
+                    <div class="about_img">
+                        <img src="./img/about.jpg" alt="picture under navbar">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 content">
+                    <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <ul>
+                        <li><i class="far fa-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        <li><i class="far fa-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                        <li><i class="far fa-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                    </ul>
+                    <p>
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why">
+        <div class="container">
+            <h2 class="insection_h">Why us</h2>
+            <p class="insection_p">Why Choose Our Restaurant</p>
+            <div class="why_box_all row revealReverse">
+                <div class="col-lg-4 h-100">
+                    <div class="why_box">
+                        <p class="why_box_num">
+                            01
+                        </p>
+                        <p class="why_box_title">
+                            Lorem Ipsum
+                        </p>
+                        <p class="why_box_text">
+                            Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 h-100">
+                    <div class="why_box">
+                        <p class="why_box_num">
+                            02
+                        </p>
+                        <p class="why_box_title">
+                            Repellat Nihil
+                        </p>
+                        <p class="why_box_text">
+                            Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 h-100">
+                    <div class="why_box">
+                        <p class="why_box_num">
+                            03
+                        </p>
+                        <p class="why_box_title">
+                            Ad ad velit qui
+                        </p>
+                        <p class="why_box_text">
+                            Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2 class="insection_h">
+                MENU
+            </h2>
+            <p class="insection_p">Check Our Tasty Menu</p>
+            <div class="menu_food row">
+                <div id="menu_btn">
+                    <button class="btn_menu aa" onclick="filterSelection('all')">All</button>
+                    <button class="btn_menu" onclick="filterSelection('starts')">Starters</button>
+                    <button class="btn_menu" onclick="filterSelection('Salads')">Salads</button>
+                    <button class="btn_menu" onclick="filterSelection('Specialty')">Specialty</button>
+                </div>
+                <div class="menu_body">
+                    <div class="row revealReverseMinusY">
+                        <div class="filterDiv starts menu_boxImg col-12 col-lg-6">
+                            <div class="menu_box_in">
+                                <img src="./img/menu/lobster-bisque.jpg" alt="lobster">
+                                <div style="width: 100%;">
+                                    <div class="menu_content">
+                                        <a href="#">Lobster Bisque</a><span>$5.95</span>
+                                    </div>
+                                    <div class="menu_ingredients">
+                                        Lorem, deren, trataro, filede, nerada
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv Specialty menu_boxImg col-12 col-lg-6">
+                            <div class="menu_box_in">
+                                <img src="./img/menu/bread-barrel.jpg" alt="lobster">
+                                <div style="width: 100%;">
+                                    <div class="menu_content">
+                                        <a href="#">Bread Barrel</a><span>$6.95</span>
+                                    </div>
+                                    <div class="menu_ingredients">
+                                        Lorem, deren, trataro, filede, nerada
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv starts menu_boxImg col-12 col-lg-6">
+                            <div class="menu_box_in">
+                                <img src="./img/menu/cake.jpg" alt="lobster">
+                                <div style="width: 100%;">
+                                    <div class="menu_content">
+                                        <a href="#">Crab Cake</a><span>$7.95</span>
+                                    </div>
+                                    <div class="menu_ingredients">
+                                        A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv Salads menu_boxImg col-12 col-lg-6">
+                            <div class="menu_box_in">
+                                <img src="./img/menu/caesar.jpg" alt="lobster">
+                                <div style="width: 100%;">
+                                    <div class="menu_content">
+                                        <a href="#">Caesar Selections</a><span>$8.95</span>
+                                    </div>
+                                    <div class="menu_ingredients">
+                                        Lorem, deren, trataro, filede, nerada
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv Specialty menu_boxImg col-12 col-lg-6">
+                            <div class="menu_box_in">
+                                <img src="./img/menu/tuscan-grilled.jpg" alt="lobster">
+                                <div style="width: 100%;">
+                                    <div class="menu_content">
+                                        <a href="#">Tuscan Grilled</a><span>$9.95</span>
+                                    </div>
+                                    <div class="menu_ingredients">
+                                        Grilled chicken with provolone, artichoke hearts, and roasted red pesto
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv starts menu_boxImg col-12 col-lg-6">
+                            <div class="menu_box_in">
+                                <img src="./img/menu/mozzarella.jpg" alt="lobster">
+                                <div style="width: 100%;">
+                                    <div class="menu_content">
+                                        <a href="#">Mozzarella Stick</a><span>$4.95</span>
+                                    </div>
+                                    <div class="menu_ingredients">
+                                        Lorem, deren, trataro, filede, nerada
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv Salads menu_boxImg col-12 col-lg-6">
+                            <div class="menu_box_in">
+                                <img src="./img/menu/greek-salad.jpg" alt="lobster">
+                                <div style="width: 100%;">
+                                    <div class="menu_content">
+                                        <a href="#">Greek Salad</a><span>$9.95</span>
+                                    </div>
+                                    <div class="menu_ingredients">
+                                        Fresh spinach, crisp romaine, tomatoes, and Greek olives
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv Salads menu_boxImg col-12 col-lg-6">
+                            <div class="menu_box_in">
+                                <img src="./img/menu/spinach-salad.jpg" alt="lobster">
+                                <div style="width: 100%;">
+                                    <div class="menu_content">
+                                        <a href="#">Spinach Salad</a><span>$9.95</span>
+                                    </div>
+                                    <div class="menu_ingredients">
+                                        Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv Specialty menu_boxImg col-12 col-lg-6">
+                            <div class="menu_box_in">
+                                <img src="./img/menu/lobster-roll.jpg" alt="lobster">
+                                <div style="width: 100%;">
+                                    <div class="menu_content">
+                                        <a href="#">Lobster Roll</a><span>$12.95</span>
+                                    </div>
+                                    <div class="menu_ingredients">
+                                        Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="check">
+        <div class="container">
+            <h2 class="insection_h">
+                Specials
+            </h2>
+            <p class="insection_p">Check Our Specials</p>
+            <div class="row">
+                <div class="check_food revealReverse">
+                    <div class="col-12 col-lg-3">
+                        <ul class="tab">
+                            <li class="tablinks active" onclick="openCity(event, 'firstFood')">
+                                <a>Modi sit est</a>
+                            </li>
+                            <li class="tablinks" onclick="openCity(event, 'secondFood')">
+                                <a>Unde praesentium sed</a>
+                            </li>
+                            <li class="tablinks" onclick="openCity(event, 'thirdFood')">
+                                <a>Pariatur explicabo vel</a>
+                            </li>
+                            <li class="tablinks" onclick="openCity(event, 'fourthFood')">
+                                <a>Nostrum qui quasi</a>
+                            </li>
+                            <li class="tablinks" onclick="openCity(event, 'fivthFood')">
+                                <a>Iusto ut expedita aut</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-9 reveal">
+                        <div id="firstFood" class="tabcontent" style="display: block;">
+                            <div class="row align-items-center">
+                                <div class="boxFood">
+                                    <div class="boxFood_left col-12 col-lg-8">
+                                        <p>Architecto ut aperiam autem id</p>
+                                        <h2>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka </h2>
+                                        <h1>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem
+                                            quaerat quos qui similique accusamus nostrum rem vero</h1>
+                                    </div>
+                                    <div class="boxFood_right col-12 col-lg-4">
+                                        <img src="./img/specials-1.png" alt="foods">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="secondFood" class="tabcontent">
+                            <div class="row align-items-center">
+                                <div class="boxFood">
+                                    <div class="boxFood_left col-12 col-lg-8">
+                                        <p>Et blanditiis nemo veritatis excepturi</p>
+                                        <h2>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</h2>
+                                        <h1>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode
+                                            pakto madirna desera vafle de nideran pal</h1>
+                                    </div>
+                                    <div class="boxFood_right col-12 col-lg-4">
+                                        <img src="./img/specials-2.png" alt="foods">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="thirdFood" class="tabcontent">
+                            <div class="row align-items-center">
+                                <div class="boxFood">
+                                    <div class="boxFood_left col-12 col-lg-8">
+                                        <p>Impedit facilis occaecati odio neque aperiam sit</p>
+                                        <h2>Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</h2>
+                                        <h1>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit
+                                            ullam. Soluta et harum voluptatem optio quae</h1>
+                                    </div>
+                                    <div class="boxFood_right col-12 col-lg-4">
+                                        <img src="./img/specials-3.png" alt="foods">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="fourthFood" class="tabcontent">
+                            <div class="row align-items-center">
+                                <div class="boxFood">
+                                    <div class="boxFood_left col-12 col-lg-8">
+                                        <p>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</p>
+                                        <h2>otam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</h2>
+                                        <h1>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis
+                                            aperiam quia a laborum inventore</h1>
+                                    </div>
+                                    <div class="boxFood_right col-12 col-lg-4">
+                                        <img src="./img/specials-4.png" alt="foods">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="fivthFood" class="tabcontent">
+                            <div class="row align-items-center">
+                                <div class="boxFood">
+                                    <div class="boxFood_left col-12 col-lg-8">
+                                        <p>Est eveniet ipsam sindera pad rone matrelat sando reda</p>
+                                        <h2>Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</h2>
+                                        <h1>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</h1>
+                                    </div>
+                                    <div class="boxFood_right col-12 col-lg-4">
+                                        <img src="./img/specials-5.png" alt="foods">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="events">
+            <div class="container position-relative">
+                <div class="insection_h">EVENTS</div>
+                <div class="insection_p">Organize Your Events in our Restaurant</div>
+                <div id="carouselExampleControlsNoTouching" class="carousel " data-bs-touch="false" data-bs-interval="false">
+                    <div class="carousel-inner revealReverseMinusY">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <img src="./img/event-birthday.jpg" class="d-block w-50 col-12 col-lg-6" alt="firstImg">
+                                <div class="col-12 col-lg-6 carousel_box">
+                                    <h3>Birthday Parties</h3>
+                                    <div class="price">
+                                        <p><span>$189</span></p>
+                                    </div>
+                                    <p class="fst-italic">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <ul>
+                                        <li><i class="far fa-check-square"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                        <li><i class="far fa-check-square"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                        <li><i class="far fa-check-square"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    </ul>
+                                    <p class="bottom_text">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus eos veritatis atque aspernatur adipisci unde dignissimos iste laudantium consequuntur.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <img src="./img/event-custom.jpg" class="d-block w-50 col-12 col-lg-6" alt="secondImg">
+                                <div class="col-12 col-lg-6 carousel_box">
+                                    <h3>Private Parties</h3>
+                                    <div class="price">
+                                        <p><span>$229</span></p>
+                                    </div>
+                                    <p class="fst-italic">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <ul>
+                                        <li><i class="far fa-check-square"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                        <li><i class="far fa-check-square"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                        <li><i class="far fa-check-square"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    </ul>
+                                    <p class="bottom_text">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus eos veritatis atque aspernatur adipisci unde dignissimos iste laudantium consequuntur.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <img src="./img/event-private.jpg" class="d-block w-50 col-12 col-lg-6" alt="thirdImg">
+                                <div class="col-12 col-lg-6 carousel_box">
+                                    <h3>Custom Parties</h3>
+                                    <div class="price">
+                                        <p><span>$99</span></p>
+                                    </div>
+                                    <p class="fst-italic">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                    <ul>
+                                        <li><i class="far fa-check-square"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                        <li><i class="far fa-check-square"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                        <li><i class="far fa-check-square"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    </ul>
+                                    <p class="bottom_text">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus eos veritatis atque aspernatur adipisci unde dignissimos iste laudantium consequuntur.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" style="color: #000;" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Booking">
+        <div class="booking">
+            <div class="container">
+                <div class="insection_h">Reservation</div>
+                <div class="insection_p">Book a Table</div>
+                <form action="#" method="get">
+                    <div class="row revealReverse">
+                        <div class="col-lg-4 inputDiv">
+                            <input type="text" class="input" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-lg-4 inputDiv">
+                            <input type="email" class="input" placeholder="Your Email" required>
+                        </div>
+                        <div class="col-lg-4 inputDiv">
+                            <input type="tel" class="input" placeholder="Your Phone" required>
+                        </div>
+                        <div class="col-lg-4 inputDiv">
+                            <input type="date" class="input" placeholder="Date" required>
+                        </div>
+                        <div class="col-lg-4 inputDiv">
+                            <input type="time" class="input" placeholder="Time" required>
+                        </div>
+                        <div class="col-lg-4 inputDiv">
+                            <input type="number" class="input" required>
+                        </div>
+                        <div class="textarea col-12">
+                            <textarea class="inputTextarea" rows="5" required></textarea>
+                        </div>
+
+                        <div class="input_btn">
+                            <button class="text_align">Book a Table</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="workers">
+        <div class="workers">
+            <div class="container">
+                <div class="insection_h">Testimonials</div>
+                <div class="insection_p">What they're saying about us</div>
+
+                <div class="carousel_2 revealReverseMinusY">
+                    <div class="nav nav-left">
+                        <div class="ion-chevron-left carousel-arrow-icon-left"></div>
+                    </div>
+                    <div class="carousel-content">
+                        <div class="row">
+                            <div class="slide col-12 col-lg-4">
+                                <p>
+                                    <i class="fas fa-quote-left"></i> Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
+                                    cillum quid.
+                                    <i class="fas fa-quote-right"></i>
+                                </p>
+                                <img src="./img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                            <div class="slide col-12 col-lg-4">
+                                <p>
+                                    <i class="fas fa-quote-left"></i> Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
+                                    cillum quid.
+                                    <i class="fas fa-quote-right"></i>
+                                </p>
+                                <img src="./img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                            <div class="slide col-12 col-lg-4">
+                                <p>
+                                    <i class="fas fa-quote-left"></i> Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi
+                                    cillum quid.
+                                    <i class="fas fa-quote-right"></i>
+                                </p>
+                                <img src="./img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav nav-right">
+                        <div class="ion-chevron-right carousel-arrow-icon-right"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallary">
+        <div class="gallary">
+            <div class="container position-relative">
+                <h2 class="insection_h">
+                    Gallery
+                </h2>
+                <p class="insection_p">Some photos from Our Restaurant</p>
+            </div>
+            <div class="row g-0 reveal">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="gallary_box">
+                        <img src="./img/gallery/gallery-1.jpg" onclick="onToggleImg(this)" alt="first-Gallery">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="gallary_box">
+                        <img src="./img/gallery/gallery-2.jpg" onclick="onToggleImg(this)" alt="second-Gallery">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="gallary_box">
+                        <img src="./img/gallery/gallery-3.jpg" onclick="onToggleImg(this)" alt="third-Gallery">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="gallary_box">
+                        <img src="./img/gallery/gallery-4.jpg" onclick="onToggleImg(this)" alt="fourth-Gallery">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="gallary_box">
+                        <img src="./img/gallery/gallery-5.jpg" onclick="onToggleImg(this)" alt="fivth-Gallery">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="gallary_box">
+                        <img src="./img/gallery/gallery-6.jpg" onclick="onToggleImg(this)" alt="sixth-Gallery">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="gallary_box">
+                        <img src="./img/gallery/gallery-7.jpg" onclick="onToggleImg(this)" alt="seventh-Gallery">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="gallary_box">
+                        <img src="./img/gallery/gallery-8.jpg" onclick="onToggleImg(this)" alt="eighth-Gallery">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal01" class="open_toggle open_toggle_black">
+        <span class="close" onclick="parentElement.style.display='none'">×</span>
+        <div class="content_img_toggle">
+            <img id="img01" class="image">
+            <p id="caption"></p>
+        </div>
+    </div>
+
+    <section id="chefs">
+        <div class="chefs">
+            <div class="container position-relative">
+                <h2 class="insection_h">
+                    Chefs
+                </h2>
+                <p class="insection_p">Our Proffesional Chefs</p>
+
+                <div class="row revealReverseMinusY">
+                    <div class="col-12 col-lg-4">
+                        <div class="chef_box">
+                            <img src="./img/chefs/chefs-1.jpg">
+                            <div class="chef_info">
+                                <div class="chef_content">
+                                    <h4>Sarah Jhonson</h4>
+                                    <span>Patissier</span>
+                                </div>
+                                <div class="chef_social">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-telegram-plane"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="chef_box">
+                            <img src="./img/chefs/chefs-2.jpg">
+                            <div class="chef_info">
+                                <div class="chef_content">
+                                    <h4>Sarah Jhonson</h4>
+                                    <span>Patissier</span>
+                                </div>
+                                <div class="chef_social">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-telegram-plane"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="chef_box">
+                            <img src="./img/chefs/chefs-3.jpg">
+                            <div class="chef_info">
+                                <div class="chef_content">
+                                    <h4>Sarah Jhonson</h4>
+                                    <span>Patissier</span>
+                                </div>
+                                <div class="chef_social">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-telegram-plane"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="insection_h">
+                Contact
+            </h2>
+            <p class="insection_p">Contact Us</p>
+        </div>
+        <div class="map reveal">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1497.6650199391227!2d69.3890763064431!3d41.34517957459622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAhmad%20Yugnakiy%20Ko&#39;chasi%2C%20Tashkent!5e0!3m2!1sen!2s!4v1638846675133!5m2!1sen!2s"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="container">
+                <div class="map_info">
+                    <div class="row mt-5">
+                        <div class="col-lg-4">
+                            <div class="info">
+                                <div class="info_addition">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="">
+                                        <h4>Location:</h4>
+                                        <p>A108 Adam Street, New York, NY 535022</p>
+                                    </div>
+                                </div>
+
+                                <div class="info_addition">
+                                    <i class="fas fa-clock"></i>
+                                    <div>
+                                        <h4>Open Hours:</h4>
+                                        <p>
+                                            Monday-Saturday:<br> 11:00 AM - 2300 PM
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="info_addition">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <h4>Email:</h4>
+                                        <p>info@example.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="info_addition">
+                                    <i class="fas fa-mobile"></i>
+                                    <div>
+                                        <h4>Call:</h4>
+                                        <p>+1 5589 55488 55s</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 mt-5 mt-lg-0">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                                    </div>
+                                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea class="form-control" name="message" rows="8" placeholder="Message" required=""></textarea>
+                                </div>
+                                <div class="text-center"><button type="submit" class="btn_form">Send Message</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <h3>Restaurantly</h3>
+                            <p>
+                                A108 Adam Street <br> NY 535022, USA<br><br>
+                                <strong>Phone:</strong> +1 5589 55488 55<br>
+                                <strong>Email:</strong> info@example.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="fab fa-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i> <a href="#">Home</a></li>
+                            <li><i class="fas fa-angle-right"></i> <a href="#">About us</a></li>
+                            <li><i class="fas fa-angle-right"></i> <a href="#">Services</a></li>
+                            <li><i class="fas fa-angle-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="fas fa-angle-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i> <a href="#">Web Design</a></li>
+                            <li><i class="fas fa-angle-right"></i> <a href="#">Web Development</a></li>
+                            <li><i class="fas fa-angle-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="fas fa-angle-right"></i> <a href="#">Marketing</a></li>
+                            <li><i class="fas fa-angle-right"></i> <a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <form action="" method="post" class="footer-form">
+                            <input type="email" name="email" class="footer-write" required/>
+                            <input type="submit" value="Subscribe" class="footer-btn" required/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                © Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/reveal.js"></script>
+    <script src="./js/forImgAppear.js"></script>
+    <script src="./js/toggleFood.js"></script>
+    <script src="./js/menu_selector.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/videoAppear.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+</body>
+
+</html>
