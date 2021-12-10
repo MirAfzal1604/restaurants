@@ -1579,6 +1579,9 @@ section {
     .chef_content span {
         font-size: 12px;
     }
+        .gallary_box {
+        border-left: 3px solid #cda45e;
+    }
 }
 
 @media screen and (max-width:369px) {
