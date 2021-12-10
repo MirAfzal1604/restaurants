@@ -9,5 +9,5 @@ function show() {
 }
 
 function closeBurger() {
-    navLink.style.top = "-100%";
+    navLink.style.top = "-150%";
 }
