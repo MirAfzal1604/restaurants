@@ -88,7 +88,8 @@
         </div>
     </div>
 
-    <div class="head d-flex align-items-center">
+
+    <section id="home" class="head d-flex align-items-center">
         <div class="container  position-relative">
             <div class="anima_head">
                 <div class="row">
@@ -97,7 +98,7 @@
                         <h2 class="head_h_s">Delivering great food for more than 18 years!</h2>
 
                         <div class="btns">
-                            <a href="#" class="btn-menu">Our Menu</a>
+                            <a href="#menu" class="btn-menu">Our Menu</a>
                             <a href="#Booking" class="btn-book">Book a Table</a>
                         </div>
                     </div>
@@ -107,7 +108,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="video">
         <i class="fas fa-times video_close" onclick="toggleVideo()"></i>
@@ -198,7 +199,7 @@
             <p class="insection_p">Check Our Tasty Menu</p>
             <div class="menu_food row">
                 <div id="menu_btn">
-                    <button class="btn_menu aa" onclick="filterSelection('all')">All</button>
+                    <button class="btn_menu toggled" onclick="filterSelection('all')">All</button>
                     <button class="btn_menu" onclick="filterSelection('starts')">Starters</button>
                     <button class="btn_menu" onclick="filterSelection('Salads')">Salads</button>
                     <button class="btn_menu" onclick="filterSelection('Specialty')">Specialty</button>
@@ -545,7 +546,7 @@
                         <div class="col-lg-4 inputDiv">
                             <input type="time" class="input" placeholder="Time" required>
                         </div>
-                       <div class="col-lg-4 inputDiv">
+                        <div class="col-lg-4 inputDiv">
                             <input type="number" placeholder="How many people" class="input" required>
                         </div>
                         <div class="textarea col-12">
