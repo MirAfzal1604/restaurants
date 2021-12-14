@@ -35,8 +35,8 @@ var menu_btn = document.getElementById("menu_btn");
 var btns = menu_btn.getElementsByClassName("btn_menu");
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("aa");
-        current[0].className = current[0].className.replace(" aa", "");
-        this.className += " aa";
+        var current = document.getElementsByClassName("toggled");
+        current[0].className = current[0].className.replace(" toggled", "");
+        this.className += " toggled";
     });
 }
